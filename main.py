@@ -28,6 +28,7 @@ def main() -> None:
         while True:
             rootConsole.print(x=playerX, y=playerY, string="@")
             context.present(rootConsole)
+            rootConsole.clear()
 
             for event in tcod.event.wait():
                 action = eventHandler.dispatch(event)
